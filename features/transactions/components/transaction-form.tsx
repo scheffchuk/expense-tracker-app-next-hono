@@ -162,9 +162,9 @@ export const TransactionForm = ({
               <FormLabel>Amount</FormLabel>
               <FormControl>
                 <AmountInput
-                  {...field}
                   disabled={disabled}
                   placeholder="0.00"
+                  {...field}
                 />
               </FormControl>
             </FormItem>
