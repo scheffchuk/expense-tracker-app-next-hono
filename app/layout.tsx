@@ -5,6 +5,7 @@ import "./globals.css";
 import { QueryProvider } from "@/providers/query-provider";
 import { SheetProvider } from "@/providers/sheet-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,7 @@ export default function RootLayout({
           <QueryProvider>
             <SheetProvider />
             <Toaster />
-            {children}
+            <Suspense>{children}</Suspense>
           </QueryProvider>
         </body>
       </html>
