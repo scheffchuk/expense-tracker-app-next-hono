@@ -1,3 +1,4 @@
+import CreateTransactionButton from "@/components/create-transaction-button";
 import { Header } from "@/components/header";
 import React from "react";
 
@@ -8,6 +9,7 @@ const DashboardLayout = ({ children }: Props) => {
     <>
       <Header />
       <main className="px-3 lg:px-14">{children}</main>
+      <CreateTransactionButton />
     </>
   );
 };
