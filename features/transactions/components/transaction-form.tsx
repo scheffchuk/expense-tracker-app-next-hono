@@ -164,7 +164,8 @@ export const TransactionForm = ({
                 <AmountInput
                   disabled={disabled}
                   placeholder="0.00"
-                  {...field}
+                  value={field.value}
+                  onChange={field.onChange}
                 />
               </FormControl>
             </FormItem>

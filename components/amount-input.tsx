@@ -62,6 +62,7 @@ export const AmountInput = ({
         placeholder={placeholder}
         decimalsLimit={2}
         decimalScale={2}
+        value={value}
         onValueChange={onChange}
         disabled={disabled}
       />
