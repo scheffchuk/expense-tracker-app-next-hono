@@ -12,7 +12,7 @@ type Props = {
   onSubmit: (data: any) => void;
 };
 
-const dateFormat = "yyyy-MM-dd HH:mm:ss";
+const dateFormat = "yyyy-MM-dd HH:mm[:ss]";
 const outputFormat = "yyyy-MM-dd";
 
 const requireOptions = ["amount", "date", "payee"];

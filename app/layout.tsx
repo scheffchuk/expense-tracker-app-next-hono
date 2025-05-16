@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider afterSignOutUrl="/sign-in">
+    <ClerkProvider afterSignOutUrl={process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL}>
       <html lang="en">
         <body className={inter.className}>
           <QueryProvider>
